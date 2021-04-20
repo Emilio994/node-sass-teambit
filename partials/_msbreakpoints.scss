@@ -61,3 +61,51 @@
         }
     }
 }
+
+// Section 2
+@mixin mq_secondSection {
+    @media screen and (max-width: 900px) {
+        main {
+            section:nth-child(2) {
+
+                .section_row {
+       
+                    .img_side, .description_side {
+                        text-align: center;
+                        width: 100%;
+                    }
+                    .img_side {
+                        img {
+    
+                        }
+                    }
+                    .description_side {
+                        .description_wrapper {
+                            width: 100%;    
+    
+                            h3 {
+    
+                            }
+                            p { 
+    
+                            }
+                            img {
+    
+                            }
+                            
+                        }
+                    }
+                }
+                .section_row.reverse {
+                    .description_side {
+                        .description_wrapper {
+                        }
+                    }
+                }
+                
+            }
+
+        }
+        
+    }
+}

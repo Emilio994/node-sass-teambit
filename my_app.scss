@@ -37,6 +37,9 @@ body {
     // MQ
     @include mq_mobile_head;
     @include mq_firstSection;
+    @include mq_secondSection;
+
+    // 
     @include big_title();
     font : {
         family: 'Roboto', sans-serif;

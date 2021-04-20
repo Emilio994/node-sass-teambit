@@ -97,6 +97,15 @@ body {
     width: 70%;
   }
 }
+@media screen and (max-width: 900px) {
+  body main section:nth-child(2) .section_row .img_side, body main section:nth-child(2) .section_row .description_side {
+    text-align: center;
+    width: 100%;
+  }
+  body main section:nth-child(2) .section_row .description_side .description_wrapper {
+    width: 100%;
+  }
+}
 body h1 {
   font-size: 30px;
   line-height: 50px;
