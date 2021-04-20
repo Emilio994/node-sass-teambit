@@ -13,10 +13,6 @@ $flex : flex;
         font-size: 35px;
     }
 }
-@mixin backgroudImg($path, $folder, $fileName, $extension,) {
-    background-image: url($path + $folder + $fileName + $exntension);
-
-}
 
 // MY CSS
 
