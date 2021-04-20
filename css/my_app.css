@@ -7,6 +7,7 @@
 .google_btn {
   display: flex;
   color: #2C4792;
+  padding: 5px;
   background: white;
   border: 1px solid #AEB9D5;
 }
@@ -31,8 +32,6 @@ header nav {
   align-items: center;
   justify-content: space-between;
   height: 10vh;
-  border-bottom: 1px solid black;
-  display: flex;
 }
 header nav .logo img {
   width: 125px;
@@ -40,6 +39,7 @@ header nav .logo img {
 header nav ul {
   display: flex;
   list-style: none;
+  align-items: center;
 }
 header nav ul li a {
   text-decoration: none;

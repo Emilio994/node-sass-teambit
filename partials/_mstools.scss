@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @mixin ms_anchors {
     text-decoration : none;
     color: black;
@@ -11,10 +12,12 @@
         color: none;
     }
 }
+
 @mixin ms_list {
     ul {
         display: $flex;
         list-style: none;
+        align-items: center;
         li {
             a {
                 text-decoration: none;
@@ -27,6 +30,15 @@
         }
     }
 }
+
+@mixin ms_nav {
+    padding: 5px 20px;
+    display: $flex;
+    align-items: center;
+    justify-content: space-between;     
+    height: 10vh;
+}
+
 @mixin ms_subcontainer {
     width: 70%;
     margin: 0 auto;

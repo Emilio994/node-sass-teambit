@@ -15,7 +15,6 @@ $flex : flex;
 }
 
 // MY CSS
-
 * {
     @include style_reset
 }
@@ -28,17 +27,13 @@ header {
         @include ms_subcontainer();
     }
     nav {
-        padding: 5px 20px;
-        display: $flex;
-        align-items: center;
-        justify-content: space-between;     
-        height: 10vh;
-        border-bottom: 1px solid black;  
-        display: $flex;        
+        @include ms_nav;
+
         .logo img {
             width: 125px;
         }
         @include ms_list;
+
 
     }   
     
