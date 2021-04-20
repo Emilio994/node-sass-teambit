@@ -70,7 +70,7 @@ body {
   }
   body header .subcontainer nav .hamburger_menu i {
     color: #58402C;
-    font-size: 20px;
+    font-size: 26px;
   }
   body header .subcontainer .jumbotron .left_jumbo, body header .subcontainer .jumbotron .right_jumbo {
     margin: 0 auto;
@@ -83,11 +83,26 @@ body {
     flex-wrap: wrap;
     text-align: center;
   }
+  body header .subcontainer .jumbotron .left_jumbo h1 {
+    font-size: 39px;
+  }
+  body header .subcontainer .jumbotron .left_jumbo p, body header .subcontainer .jumbotron .left_jumbo .sign_up_row p:last-child {
+    font-size: 19.5px;
+  }
+  body header .subcontainer .jumbotron .left_jumbo span {
+    font-size: 16.9px;
+  }
 }
 @media screen and (max-width: 900px) {
+  body main section:first-of-type .section_upside h2, body main section:first-of-type .section_downside h2 {
+    font-size: 26px;
+  }
   body main section:first-of-type .section_upside .col_row div, body main section:first-of-type .section_downside .col_row div {
     margin: 0 auto;
     width: 60%;
+  }
+  body main section:first-of-type .section_upside .col_row div p, body main section:first-of-type .section_downside .col_row div p {
+    font-size: 16.9px;
   }
   body main section:first-of-type .section_upside .mascotte_row, body main section:first-of-type .section_downside .mascotte_row {
     margin: 0 auto;
@@ -104,6 +119,12 @@ body {
   }
   body main section:nth-child(2) .section_row .description_side .description_wrapper {
     width: 100%;
+  }
+  body main section:nth-child(2) .section_row .description_side .description_wrapper h3 {
+    font-size: 26px;
+  }
+  body main section:nth-child(2) .section_row .description_side .description_wrapper p {
+    font-size: 19.5px;
   }
 }
 body h1 {

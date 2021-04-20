@@ -3,6 +3,7 @@ $flex : flex;
 $baseFontSize : 15px;
 $smallerText : 13px;
 $biggerText : 20px;
+$leadTitle : 30px;
 
 // IMPORTS
 @import "partials/_mstools";
@@ -14,7 +15,7 @@ $biggerText : 20px;
 // MIXIN
 @mixin big_title {
     h1 {
-        font-size: 30px;
+        font-size: $leadTitle; 
         line-height: 50px;
     }
 }
@@ -224,7 +225,7 @@ main {
                     }
                     i {
                         color: $msBlue;
-                        font-size: 20px;
+                        font-size: $biggerText;
                         position: absolute;
                         transform: translateY(-50%);
                         top: 0;
