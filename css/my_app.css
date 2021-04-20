@@ -163,7 +163,7 @@ main section:first-of-type .section_upside .col_row div, main section:first-of-t
 main section:first-of-type .section_upside .col_row div img, main section:first-of-type .section_downside .col_row div img {
   -o-object-fit: contain;
      object-fit: contain;
-  min-height: 100px;
+  height: 100px;
   width: 35%;
 }
 main section:first-of-type .section_upside .col_row div p, main section:first-of-type .section_downside .col_row div p {

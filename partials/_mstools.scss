@@ -67,7 +67,7 @@
     @include centered_content;
     img {
         object-fit: contain;
-        min-height: 100px;
+        height: 100px;
         width: 35%;
     }
 }
