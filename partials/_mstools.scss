@@ -1,4 +1,9 @@
 // MIXIN
+@mixin clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
 @mixin style_reset {
     margin: 0;
     padding: 0;
@@ -20,11 +25,14 @@
 }
 
 @mixin ms_anchors {
-    text-decoration : none;
-    color: $appText;
-    &:visited {
+    a {
+        text-decoration : none;
+        color: $appText;
+        &:visited {
         color: none;
+        }
     }
+    
 }
 
 @mixin ms_list {
@@ -33,10 +41,8 @@
         list-style: none;
         align-items: center;
         li {
-            a {
-                @include ms_anchors;
-                margin-right: 20px;
-            }
+            @include ms_anchors;
+            margin-right: 20px;
         }
     }
 }
@@ -59,7 +65,7 @@
 
 @mixin ms_halfcontainer {
     width: 50%;
-    margin: 0 auto;
+
 }
 
 @mixin ms_cols {

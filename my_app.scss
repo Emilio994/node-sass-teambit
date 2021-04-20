@@ -124,12 +124,59 @@ main {
                 img {
                     width: 30%;
                     margin-bottom: 70px;
-                }
-                
+                }                
             }
         }
         .section_upside {
             border-bottom: 1px solid black;
         }        
+    }
+
+    // Section 2
+    section:nth-child(2) {
+        .section_row {
+            @include clearfix;
+            padding: 30px 0px;
+            .img_side, .description_side {
+                float: left;
+                @include ms_halfcontainer;
+            }
+            .img_side {
+                img {
+                    width: 100%;
+                }
+            }
+            .description_side {
+                .description_wrapper {
+
+                    @include ms_anchors;
+                    @include ms_halfcontainer;
+                    h3 {
+                        margin-bottom: 40px;
+                    }
+                    p { 
+                        margin: 20px 0;
+                        padding-left: 10px;
+                        a {
+                            color : $msBlue;
+                        }
+                    }
+                    img {
+                        margin-top: 10px;
+                        width: 100%;
+                    }
+                    
+                }
+            }
+        }
+        .section_row.reverse {
+            .description_side {
+                @include clearfix;
+                .description_wrapper {
+                    float: right;
+                }
+            }
+        }
+        
     }
 }
