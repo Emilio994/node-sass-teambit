@@ -1,0 +1,38 @@
+// MQ
+
+// Header
+@mixin mq_mobile_head {
+    @media screen and (max-width: 900px) {
+        header {
+            .subcontainer {
+                width: 100%;
+                nav {
+                    height: fit-content;
+                    ul {
+                        display: none;
+                    }
+                    .hamburger_menu {
+                        display: inline-block;
+                        i {
+                            color : $appText;
+                            font-size: $biggerText;
+                        }
+                    }
+                }
+                .jumbotron {
+                    .left_jumbo, .right_jumbo {
+                        margin: 0 auto;
+                        width: 80%;
+                    }
+                    .left_jumbo {
+                        @include centered_content;
+                        text-align: center;                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Main
+// Section 1

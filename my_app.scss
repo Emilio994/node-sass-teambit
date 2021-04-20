@@ -2,12 +2,14 @@
 $flex : flex;
 $baseFontSize : 15px;
 $smallerText : 13px;
+$biggerText : 20px;
 
 // IMPORTS
 @import "partials/_mstools";
 @import "partials/_mycolors";
 @import "partials/_mybuttons";
 @import "partials/_mstemplates";
+@import "partials/_msbreakpoints.scss";
 
 // MIXIN
 @mixin big_title {
@@ -32,6 +34,7 @@ $smallerText : 13px;
     @include style_reset
 }
 body {
+    @include mq_mobile_head;
     @include big_title();
     font : {
         family: 'Roboto', sans-serif;
@@ -50,6 +53,9 @@ header {
         padding-bottom: 50px;
     }
     nav {
+        .hamburger_menu {
+            display: none;
+        }
         @include ms_nav;
         .logo img {
             width: 125px;

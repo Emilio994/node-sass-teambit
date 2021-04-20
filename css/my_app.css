@@ -53,6 +53,37 @@ body {
   font-size: 15px;
   color: #58402C;
 }
+@media screen and (max-width: 900px) {
+  body header .subcontainer {
+    width: 100%;
+  }
+  body header .subcontainer nav {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body header .subcontainer nav ul {
+    display: none;
+  }
+  body header .subcontainer nav .hamburger_menu {
+    display: inline-block;
+  }
+  body header .subcontainer nav .hamburger_menu i {
+    color: #58402C;
+    font-size: 20px;
+  }
+  body header .subcontainer .jumbotron .left_jumbo, body header .subcontainer .jumbotron .right_jumbo {
+    margin: 0 auto;
+    width: 80%;
+  }
+  body header .subcontainer .jumbotron .left_jumbo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
 body h1 {
   font-size: 30px;
   line-height: 50px;
@@ -74,6 +105,9 @@ header nav {
   flex-wrap: wrap;
   height: 10vh;
   border-bottom: 1px solid black;
+}
+header nav .hamburger_menu {
+  display: none;
 }
 header nav .logo img {
   width: 125px;
