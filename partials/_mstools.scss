@@ -1,0 +1,33 @@
+// MIXIN
+@mixin style_reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin ms_anchors {
+    text-decoration : none;
+    color: black;
+    &:visited {
+        color: none;
+    }
+}
+@mixin ms_list {
+    ul {
+        display: $flex;
+        list-style: none;
+        li {
+            a {
+                text-decoration: none;
+                color: black;
+                margin-right: 10px;
+                &:visited {
+                    color: none;
+                }
+            }
+        }
+    }
+}
+@mixin ms_subcontainer {
+    width: 70%;
+    margin: 0 auto;
+}

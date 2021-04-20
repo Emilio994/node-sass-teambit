@@ -1,1 +1,51 @@
+.blue_btn {
+  color: white;
+  background: blue;
+  border: none;
+}
 
+.google_btn {
+  display: flex;
+  color: #2C4792;
+  background: white;
+  border: 1px solid #AEB9D5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header .subcontainer {
+  width: 70%;
+  margin: 0 auto;
+}
+header nav {
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+header nav .logo img {
+  width: 125px;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+header nav ul li a:visited {
+  color: none;
+}

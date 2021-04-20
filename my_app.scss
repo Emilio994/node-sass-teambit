@@ -1,0 +1,49 @@
+// VARIABLES
+$flex : flex;
+
+// IMPORTS
+@import "partials/_mstools";
+@import "partials/_mycolors";
+@import "partials/_mybuttons";
+
+// MIXIN
+@mixin big_title {
+    h1 {
+        color: black;
+        font-size: 35px;
+    }
+}
+@mixin backgroudImg($path, $folder, $fileName, $extension,) {
+    background-image: url($path + $folder + $fileName + $exntension);
+
+}
+
+// MY CSS
+
+* {
+    @include style_reset
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    .subcontainer {
+        @include ms_subcontainer();
+    }
+    nav {
+        padding: 5px 20px;
+        display: $flex;
+        align-items: center;
+        justify-content: space-between;     
+        height: 10vh;
+        border-bottom: 1px solid black;  
+        display: $flex;        
+        .logo img {
+            width: 125px;
+        }
+        @include ms_list;
+
+    }   
+    
+}
