@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   font-size: 15px;
   color: white;
   background: #2C4792;
@@ -25,6 +26,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   color: #2C4792;
   padding: 10px;
   background: white;
@@ -51,6 +53,10 @@ body {
   font-size: 15px;
   color: #58402C;
 }
+body h1 {
+  font-size: 30px;
+  line-height: 50px;
+}
 body i {
   vertical-align: middle;
 }
@@ -64,6 +70,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   height: 10vh;
   border-bottom: 1px solid black;
 }
@@ -78,7 +85,7 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   color: #58402C;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 header nav ul li a:visited {
   color: none;
@@ -87,40 +94,93 @@ header .jumbotron {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 50px 0px 0px 0px;
 }
 header .jumbotron .left_jumbo {
   align-self: flex-start;
   width: 50%;
-}
-header .jumbotron .left_jumbo h1 {
-  font-size: 30px;
-  line-height: 50px;
+  margin: 0 auto;
 }
 header .jumbotron .left_jumbo p:first-of-type {
   font-weight: 500;
 }
-header .jumbotron .left_jumbo .btns_row {
+header .jumbotron .left_jumbo .sign_up_row .btns_row {
   margin-top: 50px;
   display: flex;
   align-items: center;
 }
-header .jumbotron .left_jumbo .btns_row span {
+header .jumbotron .left_jumbo .sign_up_row .btns_row span {
   margin: 0 10px;
 }
-header .jumbotron .left_jumbo p:last-child {
+header .jumbotron .left_jumbo .sign_up_row p:last-child {
   margin-top: 20px;
   font-size: 13px;
 }
-header .jumbotron .left_jumbo p:last-child i {
+header .jumbotron .left_jumbo .sign_up_row p:last-child i {
   margin-left: 3px;
 }
 header .jumbotron .right_jumbo {
   pad: 10px;
   width: 50%;
+  margin: 0 auto;
 }
 header .jumbotron .right_jumbo img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
+}
+
+main section:first-of-type {
+  background: #FFE7D2;
+}
+main section:first-of-type h2 {
+  margin: 0 auto;
+  text-align: center;
+  width: 65%;
+  font-size: 18px;
+}
+main section:first-of-type .section_upside, main section:first-of-type .section_downside {
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+main section:first-of-type .section_upside .col_row, main section:first-of-type .section_downside .col_row {
+  padding: 40px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section:first-of-type .section_upside .col_row div, main section:first-of-type .section_downside .col_row div {
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section:first-of-type .section_upside .col_row div img, main section:first-of-type .section_downside .col_row div img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  min-height: 100px;
+  width: 35%;
+}
+main section:first-of-type .section_upside .col_row div p, main section:first-of-type .section_downside .col_row div p {
+  text-align: center;
+  width: 100%;
+  margin: 30px 0px;
+  font-size: 13px;
+}
+main section:first-of-type .section_upside .mascotte_row, main section:first-of-type .section_downside .mascotte_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section:first-of-type .section_upside .mascotte_row img, main section:first-of-type .section_downside .mascotte_row img {
+  width: 30%;
+  margin-bottom: 70px;
+}
+main section:first-of-type .section_upside {
+  border-bottom: 1px solid black;
 }

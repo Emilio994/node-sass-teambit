@@ -6,9 +6,17 @@
 }
 
 @mixin even_content {
-    display: flex;
+    display: $flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin centered_content {
+    display: $flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 @mixin ms_anchors {
@@ -27,7 +35,7 @@
         li {
             a {
                 @include ms_anchors;
-                margin-right: 10px;
+                margin-right: 20px;
             }
         }
     }
@@ -42,4 +50,28 @@
 @mixin ms_subcontainer {
     width: 80%;
     margin: 0 auto;
+}
+
+@mixin ms_70container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+@mixin ms_halfcontainer {
+    width: 50%;
+    margin: 0 auto;
+}
+
+@mixin ms_cols {
+    width: calc(100% / 3);
+    @include centered_content;
+    img {
+        object-fit: contain;
+        min-height: 100px;
+        width: 35%;
+    }
+}
+
+@mixin footerCols {
+    width: calc(100% / 4);
 }

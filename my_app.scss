@@ -16,11 +16,22 @@ $smallerText : 13px;
     }
 }
 
+@mixin section_title {
+    h2 {
+        margin: 0 auto;
+        text-align: center;
+        width: 65%;
+        font-size: 18px;
+    }
+}
+
 // MY CSS
+// Commons
 * {
     @include style_reset
 }
 body {
+    @include big_title();
     font : {
         family: 'Roboto', sans-serif;
         size : $baseFontSize;
@@ -31,6 +42,7 @@ body {
     }
 }
 
+// Header
 header {
     .subcontainer {
         @include ms_subcontainer();
@@ -48,30 +60,32 @@ header {
         padding: 50px 0px 0px 0px;
         .left_jumbo {
             align-self: flex-start;
-            width: 50%;
-            @include big_title();
+            @include ms_halfcontainer;
             p:first-of-type {
                 font-weight: 500;
             }
-            .btns_row {
-                margin-top: 50px;
-                display: $flex;
-                align-items: center;
-                span {
-                    margin: 0 10px;
+            .sign_up_row {
+                .btns_row {
+                    margin-top: 50px;
+                    display: $flex;
+                    align-items: center;
+                    span {
+                        margin: 0 10px;
+                    }
+                }
+                p:last-child {
+                    margin-top: 20px;
+                    font-size: $smallerText;
+                    i {
+                        margin-left : 3px;
+                    }
                 }
             }
-            p:last-child {
-                margin-top: 20px;
-                font-size: $smallerText;
-                i {
-                    margin-left : 3px;
-                }
-            }
+            
         }
         .right_jumbo {
             pad: 10px;
-            width: 50%;
+            @include ms_halfcontainer;
             img {
                 object-fit: contain;
                 width: 100%;
@@ -80,4 +94,41 @@ header {
         
     }  
     
+}
+
+// Main
+// Section 1
+main {
+    section:first-of-type {
+        background: $msMatte;
+        @include section_title();
+        .section_upside, .section_downside {
+            @include ms_70container;
+            padding: 50px 0px;
+            .col_row {
+                padding: 40px 0px;
+                @include even_content;
+                div {
+                    @include ms_cols;
+                    p {
+                        text-align: center;
+                        width: 100%;
+                        margin: 30px 0px;
+                        font-size: $smallerText;
+                    }
+                }
+            }
+            .mascotte_row {
+                @include centered_content;
+                img {
+                    width: 30%;
+                    margin-bottom: 70px;
+                }
+                
+            }
+        }
+        .section_upside {
+            border-bottom: 1px solid black;
+        }        
+    }
 }
