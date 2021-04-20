@@ -54,15 +54,24 @@
     }
 }
 
+@mixin vertical_list {    
+    ul {
+        list-style: none;
+        li {
+            @include ms_anchors;
+            margin : 10px 0px;
+            a {
+                font-size: $smallerText;
+            }
+        }
+    }
+}
+
 @mixin ms_subcontainer {
     width: 80%;
     margin: 0 auto;
 }
 
-@mixin ms_70container {
-    width: 70%;
-    margin: 0 auto;
-}
 
 @mixin ms_halfcontainer {
     width: 50%;

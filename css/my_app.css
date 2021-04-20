@@ -142,7 +142,7 @@ main section:first-of-type h2 {
   font-size: 18px;
 }
 main section:first-of-type .section_upside, main section:first-of-type .section_downside {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   padding: 50px 0px;
 }
@@ -304,4 +304,54 @@ main section:last-child .section_wrapper .content_row .sign_up_row {
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
+}
+
+footer {
+  padding: 40px 0;
+  display: flex;
+  font-weight: 500;
+  width: 80%;
+  margin: 0 auto;
+}
+footer .left_footer {
+  padding: 0 30px;
+  display: flex;
+  align-items: flex-start;
+  width: 30%;
+}
+footer .left_footer img {
+  width: 100px;
+  margin-right: 20px;
+}
+footer .left_footer p span {
+  color: #2C4792;
+  font-size: 13px;
+}
+footer .right_footer {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+footer .right_footer .footer_col {
+  max-width: 150px;
+}
+footer .right_footer .footer_col h4 {
+  margin-bottom: 35px;
+}
+footer .right_footer ul {
+  list-style: none;
+}
+footer .right_footer ul li {
+  margin: 10px 0px;
+}
+footer .right_footer ul li a {
+  text-decoration: none;
+  color: #58402C;
+}
+footer .right_footer ul li a:visited {
+  color: none;
+}
+footer .right_footer ul li a {
+  font-size: 13px;
 }

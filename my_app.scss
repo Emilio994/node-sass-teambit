@@ -89,7 +89,7 @@ main {
         background: $msMatte;
         @include section_title();
         .section_upside, .section_downside {
-            @include ms_70container;
+            @include ms_subcontainer;
             padding: 50px 0px;
             .col_row {
                 padding: 40px 0px;
@@ -229,5 +229,43 @@ main {
                 }               
             }
         }
+    }
+}
+
+// Footer
+footer {
+    padding: 40px 0;
+    display: $flex;
+    font-weight: 500;
+    @include ms_subcontainer;
+    .left_footer {
+        padding: 0 30px;
+        display: $flex;
+        align-items: flex-start;
+        width: 30%;
+        img {
+            width: 100px;
+            margin-right: 20px;
+        }
+        p {
+            span {
+                color: $msBlue;
+                font-size: $smallerText;
+
+            }
+        }
+    }
+    .right_footer {
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        .footer_col {
+            h4 {
+                margin-bottom: 35px;
+            }
+            max-width: 150px;
+        }
+        @include vertical_list;
     }
 }
