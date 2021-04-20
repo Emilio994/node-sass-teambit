@@ -185,6 +185,9 @@ main section:first-of-type .section_upside .mascotte_row img, main section:first
 main section:first-of-type .section_upside {
   border-bottom: 1px solid black;
 }
+main section:nth-child(2) {
+  padding: 10px 0;
+}
 main section:nth-child(2) .section_row {
   content: "";
   display: table;
@@ -229,4 +232,76 @@ main section:nth-child(2) .section_row.reverse .description_side {
 }
 main section:nth-child(2) .section_row.reverse .description_side .description_wrapper {
   float: right;
+}
+main section:last-child {
+  background: #FFE7D2;
+  padding: 40px 0;
+}
+main section:last-child .section_wrapper {
+  margin: 0 auto;
+  width: 50%;
+}
+main section:last-child .section_wrapper .title_row h1 {
+  text-align: center;
+}
+main section:last-child .section_wrapper .title_row h1 img {
+  width: 25px;
+}
+main section:last-child .section_wrapper .content_row .co_founders {
+  margin-top: 50px;
+  position: relative;
+  padding: 5px 20px;
+  background: white;
+  border: 1px solid #2C4792;
+  border-radius: 10px;
+}
+main section:last-child .section_wrapper .content_row .co_founders p {
+  margin: 15px 0;
+}
+main section:last-child .section_wrapper .content_row .co_founders .profile_wrapper {
+  display: flex;
+  align-items: center;
+}
+main section:last-child .section_wrapper .content_row .co_founders .profile_wrapper .profile_pictures img {
+  width: 50px;
+  margin-right: 20px;
+}
+main section:last-child .section_wrapper .content_row .co_founders .profile_wrapper .profile_names {
+  margin-left: 5px;
+}
+main section:last-child .section_wrapper .content_row .co_founders .profile_wrapper .profile_names h4 {
+  font-weight: 400;
+}
+main section:last-child .section_wrapper .content_row .co_founders .profile_wrapper .profile_names h4:first-of-type {
+  color: #2C4792;
+}
+main section:last-child .section_wrapper .content_row .co_founders i {
+  color: #2C4792;
+  font-size: 20px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 0;
+  left: 0;
+}
+main section:last-child .section_wrapper .content_row .sign_up_row .btns_row {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+main section:last-child .section_wrapper .content_row .sign_up_row .btns_row span {
+  margin: 0 10px;
+}
+main section:last-child .section_wrapper .content_row .sign_up_row p:last-child {
+  margin-top: 20px;
+  font-size: 13px;
+}
+main section:last-child .section_wrapper .content_row .sign_up_row p:last-child i {
+  margin-left: 3px;
+}
+main section:last-child .section_wrapper .content_row .sign_up_row {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
 }

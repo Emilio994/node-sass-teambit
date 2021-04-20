@@ -1,0 +1,40 @@
+// MIXIN
+@mixin ms_nav {
+    padding: 5px 20px;
+    @include even_content;  
+    height: 10vh;
+}
+
+@mixin ms_cols {
+    width: calc(100% / 3);
+    @include centered_content;
+    img {
+        object-fit: contain;
+        height: 100px;
+        width: 35%;
+    }
+}
+
+@mixin footerCols {
+    width: calc(100% / 4);
+}
+
+@mixin signup {
+    .sign_up_row {
+        .btns_row {
+            margin-top: 50px;
+            display: $flex;
+            align-items: center;
+            span {
+                margin: 0 10px;
+            }
+        }
+        p:last-child {
+            margin-top: 20px;
+            font-size: $smallerText;
+            i {
+                margin-left : 3px;
+            }
+        }
+    }
+}

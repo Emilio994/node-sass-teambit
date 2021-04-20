@@ -4,6 +4,7 @@
     display: table;
     clear: both;
 }
+
 @mixin style_reset {
     margin: 0;
     padding: 0;
@@ -22,6 +23,12 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+@mixin column_content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
 
 @mixin ms_anchors {
@@ -47,12 +54,6 @@
     }
 }
 
-@mixin ms_nav {
-    padding: 5px 20px;
-    @include even_content;  
-    height: 10vh;
-}
-
 @mixin ms_subcontainer {
     width: 80%;
     margin: 0 auto;
@@ -68,16 +69,3 @@
 
 }
 
-@mixin ms_cols {
-    width: calc(100% / 3);
-    @include centered_content;
-    img {
-        object-fit: contain;
-        height: 100px;
-        width: 35%;
-    }
-}
-
-@mixin footerCols {
-    width: calc(100% / 4);
-}
