@@ -1,5 +1,6 @@
 // VARIABLES
 $flex : flex;
+$baseFontSize : 14px;
 
 // IMPORTS
 @import "partials/_mstools";
@@ -19,7 +20,10 @@ $flex : flex;
     @include style_reset
 }
 body {
-    font-family: 'Roboto', sans-serif;
+    font : {
+        family: 'Roboto', sans-serif;
+        size : $baseFontSize;
+    }
 }
 
 header {
@@ -33,8 +37,6 @@ header {
             width: 125px;
         }
         @include ms_list;
-
-
     }   
     
 }

@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+@mixin even_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @mixin ms_anchors {
     text-decoration : none;
     color: black;
@@ -33,9 +39,7 @@
 
 @mixin ms_nav {
     padding: 5px 20px;
-    display: $flex;
-    align-items: center;
-    justify-content: space-between;     
+    @include even_content;  
     height: 10vh;
 }
 
