@@ -46,6 +46,7 @@ body {
 header {
     .subcontainer {
         @include ms_subcontainer();
+        padding-bottom: 50px;
     }
     nav {
         @include ms_nav;

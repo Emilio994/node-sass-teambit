@@ -64,6 +64,7 @@ body i {
 header .subcontainer {
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 header nav {
   padding: 5px 20px;
