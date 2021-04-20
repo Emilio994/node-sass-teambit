@@ -128,6 +128,39 @@ body {
     font-size: 19.5px;
   }
 }
+@media screen and (max-width: 900px) {
+  body main section:last-child .section_wrapper {
+    width: 60%;
+  }
+  body main section:last-child .section_wrapper .title_row h1 {
+    font-size: 39px;
+    line-height: 70px;
+  }
+  body main section:last-child .section_wrapper .title_row h1 img {
+    width: 35px;
+  }
+  body main section:last-child .section_wrapper .content_row .co_founders p {
+    font-size: 16.9px;
+  }
+  body main section:last-child .section_wrapper .content_row .co_founders .profile_wrapper .profile_pictures img {
+    width: 70px;
+  }
+  body main section:last-child .section_wrapper .content_row .co_founders .profile_wrapper .profile_names h4 {
+    font-size: 16.9px;
+  }
+  body main section:last-child .section_wrapper .content_row .co_founders i {
+    font-size: 26px;
+  }
+  body main section:last-child .section_wrapper .content_row .sign_up_row .blue_btn {
+    font-size: 19.5px;
+  }
+  body main section:last-child .section_wrapper .content_row .sign_up_row span {
+    font-size: 19.5px;
+  }
+  body main section:last-child .section_wrapper .content_row .sign_up_row p:last-child {
+    font-size: 19.5px;
+  }
+}
 body h1 {
   font-size: 30px;
   line-height: 50px;

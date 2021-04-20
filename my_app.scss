@@ -39,6 +39,7 @@ body {
     @include mq_mobile_head;
     @include mq_firstSection;
     @include mq_secondSection;
+    @include mq_thirdSection;
 
     // 
     @include big_title();
