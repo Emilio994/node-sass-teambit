@@ -84,6 +84,19 @@ body {
     text-align: center;
   }
 }
+@media screen and (max-width: 900px) {
+  body main section:first-of-type .section_upside .col_row div, body main section:first-of-type .section_downside .col_row div {
+    margin: 0 auto;
+    width: 60%;
+  }
+  body main section:first-of-type .section_upside .mascotte_row, body main section:first-of-type .section_downside .mascotte_row {
+    margin: 0 auto;
+    width: 60%;
+  }
+  body main section:first-of-type .section_upside .mascotte_row img, body main section:first-of-type .section_downside .mascotte_row img {
+    width: 70%;
+  }
+}
 body h1 {
   font-size: 30px;
   line-height: 50px;

@@ -34,7 +34,9 @@ $biggerText : 20px;
     @include style_reset
 }
 body {
+    // MQ
     @include mq_mobile_head;
+    @include mq_firstSection;
     @include big_title();
     font : {
         family: 'Roboto', sans-serif;

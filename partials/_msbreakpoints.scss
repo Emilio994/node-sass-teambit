@@ -40,6 +40,22 @@
     @media screen and (max-width: 900px) {
         main {
             section:first-of-type {
+                .section_upside, .section_downside {
+                    .col_row {
+                        div {
+                            margin: 0 auto;
+                            width: 60%;
+                        }
+                    }
+                    .mascotte_row {
+                        margin: 0 auto;
+                        width: 60%;
+                        img {
+                            width: 70%;
+                        }                
+                    }
+                }
+
 
             }
         }
