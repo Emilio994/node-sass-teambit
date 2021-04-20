@@ -1,6 +1,7 @@
 // VARIABLES
 $flex : flex;
-$baseFontSize : 14px;
+$baseFontSize : 15px;
+$smallerText : 13px;
 
 // IMPORTS
 @import "partials/_mstools";
@@ -10,8 +11,8 @@ $baseFontSize : 14px;
 // MIXIN
 @mixin big_title {
     h1 {
-        color: black;
-        font-size: 35px;
+        font-size: 30px;
+        line-height: 50px;
     }
 }
 
@@ -24,6 +25,10 @@ body {
         family: 'Roboto', sans-serif;
         size : $baseFontSize;
     }
+    color: $appText;
+    i {
+        vertical-align: middle;
+    }
 }
 
 header {
@@ -32,11 +37,47 @@ header {
     }
     nav {
         @include ms_nav;
-
         .logo img {
             width: 125px;
         }
         @include ms_list;
-    }   
+        border-bottom: 1px solid black;
+    }
+    .jumbotron {
+        @include even_content;
+        padding: 50px 0px 0px 0px;
+        .left_jumbo {
+            align-self: flex-start;
+            width: 50%;
+            @include big_title();
+            p:first-of-type {
+                font-weight: 500;
+            }
+            .btns_row {
+                margin-top: 50px;
+                display: $flex;
+                align-items: center;
+                span {
+                    margin: 0 10px;
+                }
+            }
+            p:last-child {
+                margin-top: 20px;
+                font-size: $smallerText;
+                i {
+                    margin-left : 3px;
+                }
+            }
+        }
+        .right_jumbo {
+            pad: 10px;
+            width: 50%;
+            img {
+                object-fit: contain;
+                width: 100%;
+            }
+        }
+        
+    }  
     
 }

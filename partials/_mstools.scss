@@ -13,7 +13,7 @@
 
 @mixin ms_anchors {
     text-decoration : none;
-    color: black;
+    color: $appText;
     &:visited {
         color: none;
     }
@@ -26,12 +26,8 @@
         align-items: center;
         li {
             a {
-                text-decoration: none;
-                color: black;
+                @include ms_anchors;
                 margin-right: 10px;
-                &:visited {
-                    color: none;
-                }
             }
         }
     }
@@ -44,6 +40,6 @@
 }
 
 @mixin ms_subcontainer {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }

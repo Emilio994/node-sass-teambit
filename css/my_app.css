@@ -2,13 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
+  font-size: 15px;
   color: white;
-  background: blue;
+  background: #2C4792;
   border: none;
-  padding: 5px;
-  font-weight: 700;
+  padding: 7px;
+  font-weight: 500;
   border-radius: 5px;
+}
+.blue_btn:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 1px black;
 }
 .blue_btn img {
   margin-right: 5px;
@@ -16,8 +20,8 @@
 }
 
 .google_btn {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 500;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +30,10 @@
   background: white;
   border: 1px solid #AEB9D5;
   border-radius: 5px;
+}
+.google_btn:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 1px black;
 }
 .google_btn img {
   margin-right: 5px;
@@ -40,11 +48,15 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
+  color: #58402C;
+}
+body i {
+  vertical-align: middle;
 }
 
 header .subcontainer {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 header nav {
@@ -53,6 +65,7 @@ header nav {
   justify-content: space-between;
   align-items: center;
   height: 10vh;
+  border-bottom: 1px solid black;
 }
 header nav .logo img {
   width: 125px;
@@ -64,9 +77,50 @@ header nav ul {
 }
 header nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #58402C;
   margin-right: 10px;
 }
 header nav ul li a:visited {
   color: none;
+}
+header .jumbotron {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px 0px 0px;
+}
+header .jumbotron .left_jumbo {
+  align-self: flex-start;
+  width: 50%;
+}
+header .jumbotron .left_jumbo h1 {
+  font-size: 30px;
+  line-height: 50px;
+}
+header .jumbotron .left_jumbo p:first-of-type {
+  font-weight: 500;
+}
+header .jumbotron .left_jumbo .btns_row {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+header .jumbotron .left_jumbo .btns_row span {
+  margin: 0 10px;
+}
+header .jumbotron .left_jumbo p:last-child {
+  margin-top: 20px;
+  font-size: 13px;
+}
+header .jumbotron .left_jumbo p:last-child i {
+  margin-left: 3px;
+}
+header .jumbotron .right_jumbo {
+  pad: 10px;
+  width: 50%;
+}
+header .jumbotron .right_jumbo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
 }
