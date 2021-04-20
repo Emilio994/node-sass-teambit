@@ -36,3 +36,12 @@
 
 // Main
 // Section 1
+@mixin mq_firstSection {
+    @media screen and (max-width: 900px) {
+        main {
+            section:first-of-type {
+
+            }
+        }
+    }
+}
