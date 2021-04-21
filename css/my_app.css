@@ -132,7 +132,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   body main section:last-child .section_wrapper {
-    width: 60%;
+    width: 65%;
   }
   body main section:last-child .section_wrapper .title_row h1 {
     font-size: 39px;
@@ -145,7 +145,8 @@ body {
     font-size: 16.9px;
   }
   body main section:last-child .section_wrapper .content_row .co_founders .profile_wrapper .profile_pictures img {
-    width: 70px;
+    margin-right: 5px;
+    width: 50px;
   }
   body main section:last-child .section_wrapper .content_row .co_founders .profile_wrapper .profile_names h4 {
     font-size: 16.9px;
@@ -154,13 +155,13 @@ body {
     font-size: 26px;
   }
   body main section:last-child .section_wrapper .content_row .sign_up_row .blue_btn {
-    font-size: 19.5px;
+    font-size: 16.9px;
   }
   body main section:last-child .section_wrapper .content_row .sign_up_row span {
-    font-size: 19.5px;
+    font-size: 16.9px;
   }
   body main section:last-child .section_wrapper .content_row .sign_up_row p:last-child {
-    font-size: 19.5px;
+    font-size: 16.9px;
   }
 }
 @media screen and (max-width: 768px) {
