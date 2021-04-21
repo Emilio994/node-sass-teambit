@@ -10,7 +10,7 @@ $mq_leadTitle : $leadTitle * 1.3;
 
 // Header
 @mixin mq_mobile_head {
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 768px) {
         header {
             .subcontainer {
                 width: 100%;
@@ -55,7 +55,7 @@ $mq_leadTitle : $leadTitle * 1.3;
 // Main
 // Section 1
 @mixin mq_firstSection {
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 768px) {
         main {
             section:first-of-type {
                 .section_upside, .section_downside {
@@ -88,7 +88,7 @@ $mq_leadTitle : $leadTitle * 1.3;
 
 // Section 2
 @mixin mq_secondSection {
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 768px) {
         main {
             section:nth-child(2) {
                 .section_row {
@@ -117,7 +117,7 @@ $mq_leadTitle : $leadTitle * 1.3;
 
 // Section 3
 @mixin mq_thirdSection {
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 768px) {
         main {
             section:last-child {
                 .section_wrapper {
@@ -172,7 +172,7 @@ $mq_leadTitle : $leadTitle * 1.3;
 
 // Footer
 @mixin mq_footer {
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 768px) {
         footer {
             flex-wrap: wrap;
             .left_footer {
