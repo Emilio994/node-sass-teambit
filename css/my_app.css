@@ -84,6 +84,7 @@ body {
     text-align: center;
   }
   body header .subcontainer .jumbotron .left_jumbo h1 {
+    margin-bottom: 10px;
     font-size: 39px;
   }
   body header .subcontainer .jumbotron .left_jumbo p, body header .subcontainer .jumbotron .left_jumbo .sign_up_row p:last-child {
@@ -114,6 +115,7 @@ body {
 }
 @media screen and (max-width: 900px) {
   body main section:nth-child(2) .section_row .img_side, body main section:nth-child(2) .section_row .description_side {
+    padding: 20px;
     margin-top: 40px;
     text-align: center;
     width: 100%;
@@ -168,7 +170,7 @@ body {
   body footer .left_footer {
     align-items: center;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
   body footer .left_footer img {
     width: 100px;
@@ -365,7 +367,6 @@ main section:nth-child(2) .section_row .description_side .description_wrapper h3
 }
 main section:nth-child(2) .section_row .description_side .description_wrapper p {
   margin: 20px 0;
-  padding-left: 10px;
 }
 main section:nth-child(2) .section_row .description_side .description_wrapper p a {
   color: #2C4792;
