@@ -1,9 +1,3 @@
-// VARIABLES
-$flex : flex;
-$baseFontSize : 15px;
-$smallerText : 13px;
-$biggerText : 20px;
-$leadTitle : 30px;
 
 // IMPORTS
 @import "partials/_mstools";
@@ -12,22 +6,6 @@ $leadTitle : 30px;
 @import "partials/_mstemplates";
 @import "partials/_msbreakpoints.scss";
 
-// MIXIN
-@mixin big_title {
-    h1 {
-        font-size: $leadTitle; 
-        line-height: 50px;
-    }
-}
-
-@mixin section_title {
-    h2 {
-        margin: 0 auto;
-        text-align: center;
-        width: 65%;
-        font-size: 18px;
-    }
-}
 
 // MY CSS
 // Commons
@@ -230,7 +208,6 @@ main {
                         top: 0;
                         left: 0;
                     }                 
-                    
                 }
                 @include signup;
                 .sign_up_row {

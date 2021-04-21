@@ -1,3 +1,10 @@
+// VARIABLES
+$flex : flex;
+$baseFontSize : 15px;
+$smallerText : 13px;
+$biggerText : 20px;
+$leadTitle : 30px;
+
 // MIXIN
 @mixin clearfix {
     content: '';
